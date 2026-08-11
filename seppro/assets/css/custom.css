@@ -1,0 +1,154 @@
+/*
+Custom Css
+*/
+.boton-nav{
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    text-align: center;
+    display: inline-block;
+    border: none;
+    display: block;
+    flex: 0% 0% 100%;
+    background-color: #00509d;
+    min-width: 12.5%;
+    margin-bottom: 3rem;
+}
+.nav-img-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: auto;
+    margin-top: -0.2rem;
+}
+.profile-card {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.profile-header {
+    background: #00509d;
+    color: #fff;
+    padding: 30px;
+    border-radius: 10px 10px 0 0;
+}
+.profile-body {
+    padding: 30px;
+}
+.profile-body .info {
+    margin-bottom: 20px;
+}
+.profile-body .info h6 {
+    font-weight: bold;
+}
+.profile-body .info p {
+    margin: 0;
+}
+.profile-footer {
+    text-align: center;
+    padding: 20px;
+}
+.profile-footer .btn {
+    margin: 5px;
+}
+.edit-profile-card {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+.manage-account-card {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+.manage-account-card .btn {
+    width: 100%;
+    margin: 10px 0;
+}
+.update-profile-card {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+}
+.update-profile-card .icon {
+    font-size: 50px;
+    color: #00509d;
+}
+.change-password-card {
+    max-width: 500px;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+.update-email-card {
+    max-width: 500px;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+.delete-account-card {
+    max-width: 500px;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.delete-account-card .icon {
+    font-size: 50px;
+    color: #dc3545;
+    justify-content: center;
+    align-items: center;
+}
+.account-deleted-card {
+    max-width: 500px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-left: 32.5rem;
+}
+.account-deleted-card .icon {
+    font-size: 50px;
+    color: #28a745;
+    margin-bottom: 20px;
+    margin-left: 0rem;
+}
+.account-deleted-card h2 {
+    margin-bottom: 20px;
+    margin-left: 0rem;
+}
+.Seppro-Cerrar{
+    color: #00509d;
+
+}
+.margen-icono-img{
+    /*margin-left: -6.85px;*/
+    width: 2px;
+    height: 2px;
+    margin-top: -25.75px;
+}
