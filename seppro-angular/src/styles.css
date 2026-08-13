@@ -2,13 +2,13 @@
 
 :root {
   /* SEPPRO Brand Colors */
-  --primary: #1B5E20;
-  --primary-light: #4CAF50;
-  --primary-dark: #0D3B12;
-  --primary-gradient: linear-gradient(135deg, #1B5E20 0%, #2E7D32 50%, #43A047 100%);
+  --primary: #003d7a;
+  --primary-light: #00509d;
+  --primary-dark: #002952;
+  --primary-gradient: linear-gradient(135deg, #003d7a 0%, #00509d 50%, #0072c6 100%);
 
-  --accent: #00BFA5;
-  --accent-light: #64FFDA;
+  --accent: #0072c6;
+  --accent-light: #3399ff;
 
   --bg-dark: #0A0F1C;
   --bg-card: #111827;

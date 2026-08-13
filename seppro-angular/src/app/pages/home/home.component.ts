@@ -42,14 +42,7 @@ import { SupabaseService } from '../../services/supabase.service';
           </div>
         </div>
         <div class="hero-visual animate-slide-right delay-2">
-          <div class="hero-card">
-            <div class="hero-icon-grid">
-              <div class="icon-item" *ngFor="let s of services">
-                <div class="icon-circle">{{ s.icon }}</div>
-                <span>{{ s.name }}</span>
-              </div>
-            </div>
-          </div>
+          <img src="img/banner_img_01.png" alt="SEPPRO Mantenimiento" class="hero-main-img" />
         </div>
       </div>
 
@@ -122,13 +115,31 @@ import { SupabaseService } from '../../services/supabase.service';
     <section class="section why-section">
       <div class="container">
         <h2 class="section-title">¿Por qué elegir SEPPRO?</h2>
-        <p class="section-subtitle">Calidad y confiabilidad en cada proyecto</p>
-        <div class="grid-3">
-          <div *ngFor="let reason of reasons; let i = index" class="reason-card animate-fade-in-up" [class]="'delay-' + (i + 1)">
-            <div class="reason-icon">{{ reason.icon }}</div>
-            <h3>{{ reason.title }}</h3>
-            <p>{{ reason.desc }}</p>
+        <p class="section-subtitle">Nuestros servicios respaldados por experiencia</p>
+        <div class="why-grid">
+          <div class="grid-3">
+            <div *ngFor="let reason of reasons; let i = index" class="reason-card animate-fade-in-up" [class]="'delay-' + (i + 1)">
+              <div class="reason-icon">{{ reason.icon }}</div>
+              <h3>{{ reason.title }}</h3>
+              <p>{{ reason.desc }}</p>
+            </div>
           </div>
+          <div class="why-image animate-fade-in-up delay-4">
+            <img src="img/servicios_seppro.png" alt="Servicios SEPPRO" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BRANDS -->
+    <section class="section brands-section">
+      <div class="container">
+        <h2 class="section-title">Nuestras Marcas Aliadas</h2>
+        <div class="brands-grid">
+          <img src="img/altamiralogo.png" alt="Altamira" class="brand-logo" />
+          <img src="img/ksblogo.png" alt="KSB" class="brand-logo" />
+          <img src="img/neumannlogo.png" alt="Neumann" class="brand-logo" />
+          <img src="img/bamsalogo.png" alt="Bamsa" class="brand-logo" />
         </div>
       </div>
     </section>
@@ -228,44 +239,12 @@ import { SupabaseService } from '../../services/supabase.service';
     .stat span { color: #64748B; font-size: 0.8rem; }
     .stat-divider { width: 1px; height: 40px; background: rgba(255,255,255,0.08); }
 
-    /* Hero Card */
-    .hero-card {
-      background: rgba(17, 24, 39, 0.6);
-      backdrop-filter: blur(20px);
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 24px;
-      padding: 40px;
+    .hero-main-img {
+      width: 100%;
+      max-width: 500px;
       animation: float 6s ease-in-out infinite;
-    }
-    .hero-icon-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
-    .icon-item {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      padding: 16px;
-      background: rgba(255,255,255,0.03);
-      border-radius: 14px;
-      border: 1px solid rgba(255,255,255,0.05);
-      transition: all 0.3s;
-    }
-    .icon-item:hover {
-      border-color: rgba(76,175,80,0.3);
-      background: rgba(76,175,80,0.05);
-      transform: translateY(-2px);
-    }
-    .icon-circle {
-      width: 42px;
-      height: 42px;
-      border-radius: 12px;
-      background: rgba(76,175,80,0.1);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.2rem;
+      border-radius: 20px;
+      box-shadow: var(--shadow-lg);
     }
     .icon-item span { color: #94A3B8; font-size: 0.85rem; font-weight: 500; }
     .hero-carousel-dots {
@@ -449,8 +428,46 @@ import { SupabaseService } from '../../services/supabase.service';
       font-size: 0.9rem;
       line-height: 1.6;
     }
+    .why-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+    @media (min-width: 992px) {
+      .why-grid {
+        grid-template-columns: 1fr 400px;
+      }
+    }
+    .why-image img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: var(--shadow-lg);
+    }
 
-    /* CTA */
+    /* Brands */
+    .brands-section {
+      background: var(--bg-card);
+      border-top: 1px solid var(--border);
+    }
+    .brands-grid {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .brand-logo {
+      height: 60px;
+      opacity: 0.7;
+      transition: all 0.3s ease;
+      filter: grayscale(100%) brightness(200%);
+    }
+    .brand-logo:hover {
+      opacity: 1;
+      filter: grayscale(0%) brightness(100%);
+      transform: scale(1.05);
+    }    /* CTA */
     .cta-banner {
       padding: 80px 0;
       background: linear-gradient(135deg, rgba(27, 94, 32, 0.2), rgba(0, 191, 165, 0.1));

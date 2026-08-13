@@ -82,9 +82,7 @@ import { RouterLink } from '@angular/router';
       font-size: 1.8rem;
       font-weight: 800;
       letter-spacing: 2px;
-      background: linear-gradient(135deg, #4CAF50, #00BFA5);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: var(--primary-light);
       margin-bottom: 12px;
     }
     .footer-desc {
@@ -110,7 +108,7 @@ import { RouterLink } from '@angular/router';
       text-decoration: none;
       transition: color 0.2s;
     }
-    .contact-item a:hover { color: #4CAF50; }
+    .contact-item a:hover { color: var(--primary-light); }
     .footer-links h3 {
       color: #F1F5F9;
       font-size: 0.95rem;
@@ -125,7 +123,7 @@ import { RouterLink } from '@angular/router';
       padding: 5px 0;
       transition: all 0.2s;
     }
-    .footer-links a:hover { color: #4CAF50; transform: translateX(4px); }
+    .footer-links a:hover { color: var(--primary-light); transform: translateX(4px); }
     .social-link {
       display: flex !important;
       align-items: center;

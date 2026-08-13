@@ -13,14 +13,6 @@ import { SearchService } from '../../services/search.service';
       <div class="container nav-container">
         <!-- Logo -->
         <a routerLink="/" class="logo">
-          <div class="logo-icon">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-              <circle cx="16" cy="16" r="14" stroke="url(#grad)" stroke-width="2.5"/>
-              <path d="M10 20 C10 14 16 8 16 8 C16 8 22 14 22 20" stroke="url(#grad)" stroke-width="2" stroke-linecap="round" fill="none"/>
-              <circle cx="16" cy="20" r="3" fill="url(#grad)"/>
-              <defs><linearGradient id="grad" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#4CAF50"/><stop offset="1" stop-color="#00BFA5"/></linearGradient></defs>
-            </svg>
-          </div>
           <span class="logo-text">SEPPRO</span>
         </a>
 
@@ -124,9 +116,7 @@ import { SearchService } from '../../services/search.service';
       font-size: 1.4rem;
       font-weight: 800;
       letter-spacing: 2px;
-      background: linear-gradient(135deg, #4CAF50, #00BFA5);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: var(--primary-light);
     }
     .nav-links {
       display: flex;
@@ -144,7 +134,7 @@ import { SearchService } from '../../services/search.service';
     }
     .nav-links a:hover, .nav-links a.active {
       color: white;
-      background: rgba(76, 175, 80, 0.12);
+      background: rgba(0, 80, 157, 0.12);
     }
     .nav-actions {
       display: flex;
@@ -166,8 +156,8 @@ import { SearchService } from '../../services/search.service';
     }
     .nav-icon-btn:hover {
       color: white;
-      border-color: #4CAF50;
-      background: rgba(76,175,80,0.1);
+      border-color: var(--primary-light);
+      background: rgba(0, 80, 157, 0.1);
     }
     .user-menu {
       position: relative;
@@ -177,7 +167,7 @@ import { SearchService } from '../../services/search.service';
       width: 38px;
       height: 38px;
       border-radius: 10px;
-      background: linear-gradient(135deg, #1B5E20, #4CAF50);
+      background: var(--primary-light);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -224,7 +214,7 @@ import { SearchService } from '../../services/search.service';
       transition: all 0.2s;
     }
     .dropdown-menu a:hover, .dropdown-menu button:hover {
-      background: rgba(76,175,80,0.1);
+      background: rgba(0, 80, 157, 0.1);
       color: white;
     }
     .hamburger {
@@ -266,7 +256,7 @@ import { SearchService } from '../../services/search.service';
       font-family: 'Inter', sans-serif;
     }
     .mobile-menu a:hover, .mobile-logout:hover {
-      background: rgba(76,175,80,0.1);
+      background: rgba(0, 80, 157, 0.1);
       color: white;
     }
     .mobile-menu hr {

@@ -1,0 +1,31 @@
+com.seppro.wearos.app-savedstate-1.2.1-0 C:\Users\arman\.gradle\caches\transforms-3\0299077d3e18bb9b1d51300f42ef6426\transformed\savedstate-1.2.1\res
+com.seppro.wearos.app-core-runtime-2.2.0-1 C:\Users\arman\.gradle\caches\transforms-3\03e4202569b1ae44414ae7de52471fc1\transformed\core-runtime-2.2.0\res
+com.seppro.wearos.app-lifecycle-viewmodel-2.6.1-2 C:\Users\arman\.gradle\caches\transforms-3\12fd14730bda4ffed163b8591fe2fa64\transformed\lifecycle-viewmodel-2.6.1\res
+com.seppro.wearos.app-lifecycle-runtime-ktx-2.6.1-3 C:\Users\arman\.gradle\caches\transforms-3\2e3b44930c67a183cc5f6c7877a1bcfa\transformed\lifecycle-runtime-ktx-2.6.1\res
+com.seppro.wearos.app-lifecycle-livedata-2.6.1-4 C:\Users\arman\.gradle\caches\transforms-3\43cdc94b6a7c91ce292fea0e8bef3ac9\transformed\lifecycle-livedata-2.6.1\res
+com.seppro.wearos.app-wear-1.3.0-5 C:\Users\arman\.gradle\caches\transforms-3\54de7b4d104ad2e6b8bd2e4bdfe00792\transformed\wear-1.3.0\res
+com.seppro.wearos.app-startup-runtime-1.1.1-6 C:\Users\arman\.gradle\caches\transforms-3\59a4434d1e0e5c03ab932670cd474a10\transformed\startup-runtime-1.1.1\res
+com.seppro.wearos.app-play-services-base-18.0.1-7 C:\Users\arman\.gradle\caches\transforms-3\5ec479fe5cb6818ca717fc0a1a51993e\transformed\play-services-base-18.0.1\res
+com.seppro.wearos.app-activity-1.8.2-8 C:\Users\arman\.gradle\caches\transforms-3\5eca5c3a9ff1f0f7d58adb9460fdc508\transformed\activity-1.8.2\res
+com.seppro.wearos.app-recyclerview-1.1.0-9 C:\Users\arman\.gradle\caches\transforms-3\66230b76d8404c405520a73196b02820\transformed\recyclerview-1.1.0\res
+com.seppro.wearos.app-savedstate-ktx-1.2.1-10 C:\Users\arman\.gradle\caches\transforms-3\8cff4e702ae00a9450e0bc8f0a3a33d9\transformed\savedstate-ktx-1.2.1\res
+com.seppro.wearos.app-lifecycle-viewmodel-ktx-2.6.1-11 C:\Users\arman\.gradle\caches\transforms-3\954aef44b9fc0ac1af896a294b1b6bc5\transformed\lifecycle-viewmodel-ktx-2.6.1\res
+com.seppro.wearos.app-play-services-basement-18.0.0-12 C:\Users\arman\.gradle\caches\transforms-3\9e40073268fc4f9701b2a92f1e9eece2\transformed\play-services-basement-18.0.0\res
+com.seppro.wearos.app-lifecycle-runtime-2.6.1-13 C:\Users\arman\.gradle\caches\transforms-3\a166241ea83574d2fa95779c049f38f5\transformed\lifecycle-runtime-2.6.1\res
+com.seppro.wearos.app-activity-ktx-1.8.2-14 C:\Users\arman\.gradle\caches\transforms-3\a2c9f54688d239f733626e0381011c7c\transformed\activity-ktx-1.8.2\res
+com.seppro.wearos.app-wear-input-1.1.0-15 C:\Users\arman\.gradle\caches\transforms-3\aa2df0ce273cf31a6a7a1e6ee42b1714\transformed\wear-input-1.1.0\res
+com.seppro.wearos.app-core-ktx-1.12.0-16 C:\Users\arman\.gradle\caches\transforms-3\ba2ba087a96411c428138f7fd4df14c0\transformed\core-ktx-1.12.0\res
+com.seppro.wearos.app-fragment-1.2.4-17 C:\Users\arman\.gradle\caches\transforms-3\d2573cf9508da4b5584cb35b1ea4b2d8\transformed\fragment-1.2.4\res
+com.seppro.wearos.app-lifecycle-viewmodel-savedstate-2.6.1-18 C:\Users\arman\.gradle\caches\transforms-3\dde70ad9b0a33cd76ea357c7f5450859\transformed\lifecycle-viewmodel-savedstate-2.6.1\res
+com.seppro.wearos.app-profileinstaller-1.3.0-19 C:\Users\arman\.gradle\caches\transforms-3\e0f963bc6b325dfac1e238a6eabaf5ec\transformed\profileinstaller-1.3.0\res
+com.seppro.wearos.app-core-1.12.0-20 C:\Users\arman\.gradle\caches\transforms-3\e301ef7b03c70a30fa9dbfc1c07bd30d\transformed\core-1.12.0\res
+com.seppro.wearos.app-annotation-experimental-1.3.0-21 C:\Users\arman\.gradle\caches\transforms-3\ec0af8b4766bdd2915b00a5e1928a896\transformed\annotation-experimental-1.3.0\res
+com.seppro.wearos.app-webkit-1.9.0-22 C:\Users\arman\.gradle\caches\transforms-3\ed7247e205e1a3d94a0a38b42dfee0fb\transformed\webkit-1.9.0\res
+com.seppro.wearos.app-lifecycle-livedata-core-2.6.1-23 C:\Users\arman\.gradle\caches\transforms-3\f7d780c0e5e5aedb4a1e827c15117c83\transformed\lifecycle-livedata-core-2.6.1\res
+com.seppro.wearos.app-pngs-24 D:\PROYECTOS\dedos\Proyecto SEPPRO\2025\seppro-wearos\app\build\generated\res\pngs\debug
+com.seppro.wearos.app-resValues-25 D:\PROYECTOS\dedos\Proyecto SEPPRO\2025\seppro-wearos\app\build\generated\res\resValues\debug
+com.seppro.wearos.app-packageDebugResources-26 D:\PROYECTOS\dedos\Proyecto SEPPRO\2025\seppro-wearos\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.seppro.wearos.app-packageDebugResources-27 D:\PROYECTOS\dedos\Proyecto SEPPRO\2025\seppro-wearos\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.seppro.wearos.app-merged_res-28 D:\PROYECTOS\dedos\Proyecto SEPPRO\2025\seppro-wearos\app\build\intermediates\merged_res\debug
+com.seppro.wearos.app-debug-29 D:\PROYECTOS\dedos\Proyecto SEPPRO\2025\seppro-wearos\app\src\debug\res
+com.seppro.wearos.app-main-30 D:\PROYECTOS\dedos\Proyecto SEPPRO\2025\seppro-wearos\app\src\main\res
