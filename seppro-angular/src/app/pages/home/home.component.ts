@@ -52,7 +52,7 @@ import { SupabaseService } from '../../services/supabase.service';
       </div>
     </section>
 
-    <!-- POPUP BANNER (Práctica 1-2) -->
+    <!-- POPUP BANNER -->
     <div class="modal-overlay" *ngIf="showPopup" (click)="showPopup = false">
       <div class="modal-content popup-content" (click)="$event.stopPropagation()">
         <button class="modal-close" (click)="showPopup = false">✕</button>
@@ -144,7 +144,30 @@ import { SupabaseService } from '../../services/supabase.service';
       </div>
     </section>
 
-    <!-- CTA BANNER (Práctica 1-2 - Banner digital) -->
+    <!-- WEARABLE WIDGET -->
+    <section class="section wearable-widget">
+      <div class="container">
+        <div class="wearable-card glass-card">
+          <div class="wearable-content">
+            <h2 class="gradient-text">⌚ Lleva SEPPRO en tu muñeca</h2>
+            <p>Descarga nuestra aplicación nativa para <strong>Smartwatch (WearOS)</strong>. Monitorea el estado de tus compras en tiempo real, verifica tus fechas de entrega estimadas y disfruta de un diseño premium directo en tu reloj.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.seppro.wearos" target="_blank" class="btn-primary">
+              <span class="icon">⬇️</span> Descargar para WearOS
+            </a>
+          </div>
+          <div class="wearable-visual">
+            <div class="smartwatch-mockup">
+              <div class="screen">
+                <span class="logo">💧 SEPPRO</span>
+                <span class="status">📦 Enviado</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
     <section class="cta-banner">
       <div class="container">
         <div class="cta-content">
@@ -171,13 +194,13 @@ import { SupabaseService } from '../../services/supabase.service';
     .hero-bg {
       position: absolute;
       inset: 0;
-      background: radial-gradient(ellipse at 30% 50%, rgba(27, 94, 32, 0.15) 0%, transparent 60%),
-                  radial-gradient(ellipse at 70% 80%, rgba(0, 191, 165, 0.08) 0%, transparent 50%);
+      background: radial-gradient(ellipse at 30% 50%, rgba(0, 61, 122, 0.15) 0%, transparent 60%),
+                  radial-gradient(ellipse at 70% 80%, rgba(0, 80, 157, 0.08) 0%, transparent 50%);
     }
     .hero-particles { position: absolute; inset: 0; }
     .particle {
       position: absolute;
-      background: rgba(76, 175, 80, 0.3);
+      background: rgba(0, 114, 198, 0.3);
       border-radius: 50%;
       animation: float 6s ease-in-out infinite;
     }
@@ -192,10 +215,10 @@ import { SupabaseService } from '../../services/supabase.service';
     .hero-badge {
       display: inline-block;
       padding: 8px 18px;
-      background: rgba(76, 175, 80, 0.1);
-      border: 1px solid rgba(76, 175, 80, 0.2);
+      background: rgba(0, 114, 198, 0.1);
+      border: 1px solid rgba(0, 114, 198, 0.2);
       border-radius: 30px;
-      color: #4CAF50;
+      color: #0072c6;
       font-size: 0.85rem;
       font-weight: 500;
       margin-bottom: 20px;
@@ -205,15 +228,15 @@ import { SupabaseService } from '../../services/supabase.service';
       font-weight: 900;
       line-height: 1.1;
       margin-bottom: 20px;
-      color: #F1F5F9;
+      color: #0F172A;
     }
     .gradient-text {
-      background: linear-gradient(135deg, #4CAF50, #00BFA5);
+      background: linear-gradient(135deg, #0072c6, #00509d);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
     .hero-text p {
-      color: #94A3B8;
+      color: #334155;
       font-size: 1.1rem;
       line-height: 1.7;
       margin-bottom: 32px;
@@ -232,12 +255,12 @@ import { SupabaseService } from '../../services/supabase.service';
     .stat strong {
       display: block;
       font-size: 1.8rem;
-      background: linear-gradient(135deg, #4CAF50, #00BFA5);
+      background: linear-gradient(135deg, #0072c6, #00509d);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
     .stat span { color: #64748B; font-size: 0.8rem; }
-    .stat-divider { width: 1px; height: 40px; background: rgba(255,255,255,0.08); }
+    .stat-divider { width: 1px; height: 40px; background: rgba(0,0,0,0.08); }
 
     .hero-main-img {
       width: 100%;
@@ -246,7 +269,7 @@ import { SupabaseService } from '../../services/supabase.service';
       border-radius: 20px;
       box-shadow: var(--shadow-lg);
     }
-    .icon-item span { color: #94A3B8; font-size: 0.85rem; font-weight: 500; }
+    .icon-item span { color: #334155; font-size: 0.85rem; font-weight: 500; }
     .hero-carousel-dots {
       position: absolute;
       bottom: 40px;
@@ -260,12 +283,12 @@ import { SupabaseService } from '../../services/supabase.service';
       height: 10px;
       border-radius: 50%;
       border: none;
-      background: rgba(255,255,255,0.2);
+      background: rgba(0,0,0,0.2);
       cursor: pointer;
       transition: all 0.3s;
     }
     .hero-carousel-dots button.active {
-      background: #4CAF50;
+      background: #0072c6;
       width: 28px;
       border-radius: 5px;
     }
@@ -278,12 +301,12 @@ import { SupabaseService } from '../../services/supabase.service';
     .popup-content h2 {
       font-size: 1.6rem;
       margin-bottom: 12px;
-      background: linear-gradient(135deg, #4CAF50, #00BFA5);
+      background: linear-gradient(135deg, #0072c6, #00509d);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
     .popup-content p {
-      color: #94A3B8;
+      color: #334155;
       margin-bottom: 24px;
     }
 
@@ -307,15 +330,15 @@ import { SupabaseService } from '../../services/supabase.service';
       content: '';
       position: absolute;
       inset: 0;
-      background: linear-gradient(135deg, rgba(76,175,80,0.08), transparent);
+      background: linear-gradient(135deg, rgba(0,114,198,0.08), transparent);
       opacity: 0;
       transition: opacity 0.3s;
     }
     .category-card:hover::before { opacity: 1; }
     .category-card:hover {
       transform: translateY(-6px);
-      border-color: rgba(76,175,80,0.3);
-      box-shadow: 0 12px 40px rgba(76,175,80,0.15);
+      border-color: rgba(0,114,198,0.3);
+      box-shadow: 0 12px 40px rgba(0,114,198,0.15);
     }
     .cat-icon {
       font-size: 2.5rem;
@@ -324,12 +347,12 @@ import { SupabaseService } from '../../services/supabase.service';
       display: flex;
       align-items: center;
       justify-content: center;
-      background: rgba(76,175,80,0.08);
+      background: rgba(0,114,198,0.08);
       border-radius: 20px;
     }
-    .category-card h3 { color: #F1F5F9; font-size: 1rem; font-weight: 600; text-align: center; }
+    .category-card h3 { color: #0F172A; font-size: 1rem; font-weight: 600; text-align: center; }
     .cat-arrow {
-      color: #4CAF50;
+      color: #0072c6;
       font-size: 1.2rem;
       opacity: 0;
       transform: translateX(-10px);
@@ -343,7 +366,7 @@ import { SupabaseService } from '../../services/supabase.service';
     .product-img {
       position: relative;
       height: 220px;
-      background: #0A0F1C;
+      background: #0F172A;
       overflow: hidden;
     }
     .product-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s; }
@@ -355,29 +378,29 @@ import { SupabaseService } from '../../services/supabase.service';
       align-items: center;
       justify-content: center;
       font-size: 3rem;
-      background: linear-gradient(135deg, #111827, #1E293B);
+      background: linear-gradient(135deg, #E2E8F0, #CBD5E1);
     }
     .product-badge {
       position: absolute;
       top: 12px;
       right: 12px;
       padding: 4px 12px;
-      background: linear-gradient(135deg, #4CAF50, #00BFA5);
-      color: white;
+      background: linear-gradient(135deg, #0072c6, #00509d);
+      color: #0F172A;
       border-radius: 20px;
       font-size: 0.75rem;
       font-weight: 600;
     }
     .product-info { padding: 20px; }
     .product-cat {
-      color: #4CAF50;
+      color: #0072c6;
       font-size: 0.75rem;
       font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 1px;
     }
     .product-info h3 {
-      color: #F1F5F9;
+      color: #0F172A;
       font-size: 1.1rem;
       margin: 6px 0 8px;
     }
@@ -393,7 +416,7 @@ import { SupabaseService } from '../../services/supabase.service';
       justify-content: space-between;
     }
     .product-price {
-      color: #00BFA5;
+      color: #00509d;
       font-weight: 700;
       font-size: 1.1rem;
     }
@@ -411,15 +434,15 @@ import { SupabaseService } from '../../services/supabase.service';
     }
     .reason-card:hover {
       transform: translateY(-6px);
-      border-color: rgba(76,175,80,0.3);
-      box-shadow: 0 12px 40px rgba(76,175,80,0.15);
+      border-color: rgba(0,114,198,0.3);
+      box-shadow: 0 12px 40px rgba(0,114,198,0.15);
     }
     .reason-icon {
       font-size: 2.5rem;
       margin-bottom: 16px;
     }
     .reason-card h3 {
-      color: #F1F5F9;
+      color: #0F172A;
       font-size: 1.15rem;
       margin-bottom: 10px;
     }
@@ -467,12 +490,38 @@ import { SupabaseService } from '../../services/supabase.service';
       opacity: 1;
       filter: grayscale(0%) brightness(100%);
       transform: scale(1.05);
-    }    /* CTA */
+    }
+
+    /* WEARABLE WIDGET */
+    .wearable-widget { padding: 40px 0; }
+    .wearable-card {
+      display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 40px; padding: 40px;
+      background: linear-gradient(135deg, var(--bg-surface), #FFFFFF);
+      border-radius: 24px; border: 1px solid var(--border);
+    }
+    .wearable-content h2 { font-size: 2rem; font-weight: 800; margin-bottom: 16px; }
+    .wearable-content p { color: #64748B; font-size: 1.05rem; line-height: 1.6; margin-bottom: 24px; }
+    .smartwatch-mockup {
+      width: 180px; height: 180px; margin: 0 auto;
+      border-radius: 50%; border: 12px solid #0F172A;
+      background: #FFFFFF; display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1); position: relative;
+    }
+    .smartwatch-mockup::before {
+      content: ''; position: absolute; top: -30px; bottom: -30px; left: 40px; right: 40px;
+      background: #1E293B; z-index: -1; border-radius: 20px;
+    }
+    .smartwatch-mockup .screen { text-align: center; }
+    .smartwatch-mockup .logo { display: block; color: #0072c6; font-weight: 800; margin-bottom: 12px; }
+    .smartwatch-mockup .status { background: #E3F2FD; color: #1976D2; padding: 6px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; }
+    @media (max-width: 768px) { .wearable-card { grid-template-columns: 1fr; text-align: center; } }
+
+    /* CTA */
     .cta-banner {
       padding: 80px 0;
-      background: linear-gradient(135deg, rgba(27, 94, 32, 0.2), rgba(0, 191, 165, 0.1));
-      border-top: 1px solid rgba(76,175,80,0.15);
-      border-bottom: 1px solid rgba(76,175,80,0.15);
+      background: linear-gradient(135deg, rgba(0, 61, 122, 0.2), rgba(0, 80, 157, 0.1));
+      border-top: 1px solid rgba(0,114,198,0.15);
+      border-bottom: 1px solid rgba(0,114,198,0.15);
     }
     .cta-content {
       text-align: center;
@@ -481,11 +530,11 @@ import { SupabaseService } from '../../services/supabase.service';
     }
     .cta-content h2 {
       font-size: 2rem;
-      color: #F1F5F9;
+      color: #0F172A;
       margin-bottom: 12px;
     }
     .cta-content p {
-      color: #94A3B8;
+      color: #334155;
       margin-bottom: 28px;
     }
     .cta-actions {
@@ -574,3 +623,5 @@ export class HomeComponent implements OnInit {
     this.currentSlide = i;
   }
 }
+
+

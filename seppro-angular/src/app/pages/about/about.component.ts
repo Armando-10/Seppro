@@ -58,14 +58,14 @@ import { CommonModule } from '@angular/common';
     .about-hero {
       padding: 140px 0 60px;
       text-align: center;
-      background: radial-gradient(ellipse at 50% 0%, rgba(27,94,32,0.15), transparent 60%);
+      background: radial-gradient(ellipse at 50% 0%, rgba(0,61,122,0.15), transparent 60%);
     }
     .service-card {
       padding: 32px 24px;
       text-align: center;
     }
     .service-icon { font-size: 2.5rem; margin-bottom: 16px; }
-    .service-card h3 { color: #F1F5F9; font-size: 1rem; margin-bottom: 8px; }
+    .service-card h3 { color: #0F172A; font-size: 1rem; margin-bottom: 8px; }
     .service-card p { color: #64748B; font-size: 0.85rem; line-height: 1.5; }
 
     .brands-section { background: rgba(255,255,255,0.01); }
@@ -83,13 +83,13 @@ import { CommonModule } from '@angular/common';
       transition: all 0.3s;
     }
     .brand-card:hover {
-      border-color: rgba(76,175,80,0.3);
+      border-color: rgba(0,114,198,0.3);
       transform: translateY(-4px);
     }
     .brand-name {
       font-size: 1.3rem;
       font-weight: 700;
-      background: linear-gradient(135deg, #4CAF50, #00BFA5);
+      background: linear-gradient(135deg, #0072c6, #00509d);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -107,7 +107,7 @@ import { CommonModule } from '@angular/common';
       top: 0;
       bottom: 0;
       width: 2px;
-      background: linear-gradient(to bottom, #4CAF50, #00BFA5);
+      background: linear-gradient(to bottom, #0072c6, #00509d);
     }
     .timeline-item {
       position: relative;
@@ -120,16 +120,16 @@ import { CommonModule } from '@angular/common';
       width: 12px;
       height: 12px;
       border-radius: 50%;
-      background: #4CAF50;
+      background: #0072c6;
       border: 3px solid var(--bg-dark);
     }
     .timeline-content { padding: 24px; }
     .timeline-year {
-      color: #4CAF50;
+      color: #0072c6;
       font-weight: 700;
       font-size: 0.85rem;
     }
-    .timeline-content h3 { color: #F1F5F9; margin: 6px 0; font-size: 1.1rem; }
+    .timeline-content h3 { color: #0F172A; margin: 6px 0; font-size: 1.1rem; }
     .timeline-content p { color: #64748B; font-size: 0.9rem; }
 
     @media (max-width: 768px) {
@@ -154,3 +154,4 @@ export class AboutComponent {
     { year: '2025', title: 'Digitalización', desc: 'Lanzamiento de plataforma web y conexión con dispositivos inteligentes.' }
   ];
 }
+

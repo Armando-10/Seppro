@@ -14,7 +14,7 @@ import { SupabaseService } from '../../services/supabase.service';
     <div class="search-overlay" *ngIf="isOpen" (click)="close()">
       <div class="search-container" (click)="$event.stopPropagation()">
         <div class="search-header">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4CAF50" stroke-width="2">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0072c6" stroke-width="2">
             <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
           </svg>
           <input
@@ -78,8 +78,8 @@ import { SupabaseService } from '../../services/supabase.service';
     .search-container {
       width: 90%;
       max-width: 640px;
-      background: #1E293B;
-      border: 1px solid rgba(255,255,255,0.1);
+      background: #CBD5E1;
+      border: 1px solid rgba(0,0,0,0.1);
       border-radius: 16px;
       overflow: hidden;
       box-shadow: 0 24px 64px rgba(0,0,0,0.6);
@@ -90,7 +90,7 @@ import { SupabaseService } from '../../services/supabase.service';
       align-items: center;
       gap: 12px;
       padding: 16px 20px;
-      border-bottom: 1px solid rgba(255,255,255,0.06);
+      border-bottom: 1px solid rgba(0,0,0,0.06);
     }
     .search-input {
       flex: 1;
@@ -104,8 +104,8 @@ import { SupabaseService } from '../../services/supabase.service';
     .search-input::placeholder { color: #64748B; }
     .kbd {
       padding: 4px 10px;
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.1);
+      background: rgba(0,0,0,0.06);
+      border: 1px solid rgba(0,0,0,0.1);
       border-radius: 6px;
       color: #64748B;
       font-size: 0.75rem;
@@ -126,23 +126,23 @@ import { SupabaseService } from '../../services/supabase.service';
       cursor: pointer;
       transition: all 0.2s;
     }
-    .result-item:hover { background: rgba(76,175,80,0.08); }
+    .result-item:hover { background: rgba(0,114,198,0.08); }
     .result-img {
       width: 48px;
       height: 48px;
       border-radius: 8px;
       overflow: hidden;
       flex-shrink: 0;
-      background: #111827;
+      background: #E2E8F0;
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 1.2rem;
     }
     .result-img img { width: 100%; height: 100%; object-fit: cover; }
-    .result-info h4 { color: #F1F5F9; font-size: 0.95rem; margin-bottom: 2px; }
+    .result-info h4 { color: #0F172A; font-size: 0.95rem; margin-bottom: 2px; }
     .result-info p { color: #64748B; font-size: 0.8rem; margin: 0; }
-    .result-price { color: #4CAF50; font-weight: 600; font-size: 0.85rem; }
+    .result-price { color: #0072c6; font-weight: 600; font-size: 0.85rem; }
     .no-results, .loading {
       text-align: center;
       padding: 32px;
@@ -152,8 +152,8 @@ import { SupabaseService } from '../../services/supabase.service';
     .spinner {
       width: 24px;
       height: 24px;
-      border: 3px solid rgba(76,175,80,0.2);
-      border-top-color: #4CAF50;
+      border: 3px solid rgba(0,114,198,0.2);
+      border-top-color: #0072c6;
       border-radius: 50%;
       animation: spin 0.8s linear infinite;
       margin: 0 auto 12px;
@@ -168,10 +168,10 @@ import { SupabaseService } from '../../services/supabase.service';
     .tip {
       display: inline-block;
       padding: 6px 14px;
-      background: rgba(76,175,80,0.08);
+      background: rgba(0,114,198,0.08);
       border-radius: 20px;
       font-size: 0.8rem;
-      color: #94A3B8;
+      color: #334155;
     }
     @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
     @keyframes fadeInUp { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
@@ -245,3 +245,4 @@ export class SearchModalComponent implements OnInit, OnDestroy {
     this.sub?.unsubscribe();
   }
 }
+

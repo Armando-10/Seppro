@@ -12,33 +12,13 @@ import { SupabaseService } from '../../services/supabase.service';
     <section class="auth-page">
       <div class="auth-container">
         <div class="auth-card glass-card">
-          <!-- PIN Mode -->
-          <div *ngIf="pinMode" class="pin-section">
-            <div class="auth-header">
-              <div class="auth-logo">🔐</div>
-              <h1>Verificación PIN</h1>
-              <p>Ingresa tu PIN de seguridad</p>
-            </div>
-            <div class="pin-dots">
-              <div *ngFor="let d of pinDots; let i = index" class="pin-dot" [class.filled]="pin.length > i"></div>
-            </div>
-            <div class="pin-keypad">
-              <button *ngFor="let n of [1,2,3,4,5,6,7,8,9]" (click)="addPinDigit(n)" class="key-btn">{{ n }}</button>
-              <button class="key-btn" disabled></button>
-              <button (click)="addPinDigit(0)" class="key-btn">0</button>
-              <button (click)="removePinDigit()" class="key-btn key-delete">⌫</button>
-            </div>
-            <button (click)="pinMode = false" class="back-to-login">← Volver al login normal</button>
-            <div class="auth-error" *ngIf="error">{{ error }}</div>
-          </div>
 
           <!-- Normal Login -->
-          <div *ngIf="!pinMode">
-            <div class="auth-header">
-              <div class="auth-logo">💧</div>
-              <h1>Iniciar Sesión</h1>
-              <p>Accede a tu cuenta SEPPRO</p>
-            </div>
+          <div class="auth-header">
+            <div class="auth-logo">💧</div>
+            <h1>Iniciar Sesión</h1>
+            <p>Accede a tu cuenta SEPPRO</p>
+          </div>
 
             <form (ngSubmit)="onLogin()">
               <div class="form-group">
@@ -54,19 +34,15 @@ import { SupabaseService } from '../../services/supabase.service';
               </button>
             </form>
 
-            <div class="auth-divider"><span>o</span></div>
 
-            <button (click)="pinMode = true" class="btn-outline full-width">🔢 Acceder con PIN</button>
+          <div class="auth-error" *ngIf="error">{{ error }}</div>
 
-            <div class="auth-error" *ngIf="error">{{ error }}</div>
-
-            <p class="auth-footer">
-              ¿No tienes cuenta? <a routerLink="/registro">Registrarse</a>
-            </p>
-          </div>
+          <p class="auth-footer">
+            ¿No tienes cuenta? <a routerLink="/registro">Registrarse</a>
+          </p>
         </div>
 
-        <!-- Security Info (Práctica 11-12) -->
+        <!-- Security Info -->
         <div class="security-info">
           <h3>🛡️ Seguridad</h3>
           <ul>
@@ -86,7 +62,7 @@ import { SupabaseService } from '../../services/supabase.service';
       align-items: center;
       justify-content: center;
       padding: 100px 20px 60px;
-      background: radial-gradient(ellipse at 50% 30%, rgba(27,94,32,0.12), transparent 60%);
+      background: radial-gradient(ellipse at 50% 30%, rgba(0,61,122,0.12), transparent 60%);
     }
     .auth-container {
       display: flex;
@@ -107,7 +83,7 @@ import { SupabaseService } from '../../services/supabase.service';
     .auth-logo { font-size: 2.5rem; margin-bottom: 12px; }
     .auth-header h1 {
       font-size: 1.6rem;
-      color: #F1F5F9;
+      color: #0F172A;
       margin-bottom: 6px;
     }
     .auth-header p { color: #64748B; font-size: 0.9rem; }
@@ -123,7 +99,7 @@ import { SupabaseService } from '../../services/supabase.service';
       top: 50%;
       width: calc(50% - 20px);
       height: 1px;
-      background: rgba(255,255,255,0.06);
+      background: rgba(0,0,0,0.06);
     }
     .auth-divider::before { left: 0; }
     .auth-divider::after { right: 0; }
@@ -144,61 +120,8 @@ import { SupabaseService } from '../../services/supabase.service';
       color: #64748B;
       font-size: 0.9rem;
     }
-    .auth-footer a { color: #4CAF50; text-decoration: none; font-weight: 600; }
+    .auth-footer a { color: #0072c6; text-decoration: none; font-weight: 600; }
 
-    /* PIN */
-    .pin-dots {
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-      margin-bottom: 32px;
-    }
-    .pin-dot {
-      width: 18px;
-      height: 18px;
-      border-radius: 50%;
-      border: 2px solid rgba(255,255,255,0.15);
-      transition: all 0.2s;
-    }
-    .pin-dot.filled { background: #4CAF50; border-color: #4CAF50; box-shadow: 0 0 12px rgba(76,175,80,0.4); }
-    .pin-keypad {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 12px;
-      max-width: 280px;
-      margin: 0 auto 24px;
-    }
-    .key-btn {
-      width: 72px;
-      height: 72px;
-      border-radius: 50%;
-      border: 1px solid rgba(255,255,255,0.1);
-      background: rgba(255,255,255,0.03);
-      color: #F1F5F9;
-      font-size: 1.4rem;
-      font-family: 'Inter', sans-serif;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.2s;
-      margin: 0 auto;
-    }
-    .key-btn:hover:not(:disabled) {
-      background: rgba(76,175,80,0.15);
-      border-color: #4CAF50;
-    }
-    .key-btn:active:not(:disabled) { transform: scale(0.95); }
-    .key-btn:disabled { opacity: 0; cursor: default; }
-    .key-delete { font-size: 1.2rem; }
-    .back-to-login {
-      display: block;
-      margin: 0 auto;
-      background: none;
-      border: none;
-      color: #4CAF50;
-      cursor: pointer;
-      font-family: 'Inter', sans-serif;
-      font-size: 0.85rem;
-    }
 
     /* Security Info */
     .security-info {
@@ -208,13 +131,13 @@ import { SupabaseService } from '../../services/supabase.service';
       border: 1px solid var(--border);
       border-radius: 16px;
     }
-    .security-info h3 { color: #F1F5F9; margin-bottom: 16px; font-size: 1rem; }
+    .security-info h3 { color: #0F172A; margin-bottom: 16px; font-size: 1rem; }
     .security-info ul { list-style: none; }
     .security-info li {
       padding: 8px 0;
       color: #64748B;
       font-size: 0.85rem;
-      border-bottom: 1px solid rgba(255,255,255,0.04);
+      border-bottom: 1px solid rgba(0,0,0,0.04);
     }
     .security-info li:last-child { border: none; }
 
@@ -227,12 +150,8 @@ import { SupabaseService } from '../../services/supabase.service';
 export class LoginComponent {
   email = '';
   password = '';
-  pin = '';
-  pinMode = false;
   loading = false;
   error = '';
-
-  pinDots = [0, 1, 2, 3];
 
   constructor(private supabase: SupabaseService, private router: Router) {}
 
@@ -247,33 +166,5 @@ export class LoginComponent {
     }
     this.loading = false;
   }
-
-  addPinDigit(n: number) {
-    if (this.pin.length < 4) {
-      this.pin += n.toString();
-      if (this.pin.length === 4) {
-        this.verifyPin();
-      }
-    }
-  }
-
-  removePinDigit() {
-    this.pin = this.pin.slice(0, -1);
-  }
-
-  async verifyPin() {
-    this.error = '';
-    try {
-      const valid = await this.supabase.verifyPin(this.pin);
-      if (valid) {
-        this.router.navigate(['/dashboard']);
-      } else {
-        this.error = 'PIN incorrecto';
-        this.pin = '';
-      }
-    } catch (e: any) {
-      this.error = 'Debes iniciar sesión primero antes de usar el PIN';
-      this.pin = '';
-    }
-  }
 }
+

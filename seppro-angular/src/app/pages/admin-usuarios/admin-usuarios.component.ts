@@ -10,7 +10,7 @@ import { SupabaseService, UserProfile } from '../../services/supabase.service';
     <section class="admin-hero">
       <div class="container">
         <h1 class="section-title">Administración de Usuarios</h1>
-        <p class="section-subtitle">Gestiona cuentas de usuario: crear, habilitar, deshabilitar — Práctica 13</p>
+        <p class="section-subtitle">Gestiona cuentas de usuario: habilitar y deshabilitar</p>
       </div>
     </section>
 
@@ -78,59 +78,6 @@ import { SupabaseService, UserProfile } from '../../services/supabase.service';
             </table>
           </div>
         </div>
-
-        <!-- Comparison Table (Práctica 13) -->
-        <div class="comparison-section">
-          <h2 class="section-title" style="font-size: 1.6rem;">Deshabilitar vs Eliminar Usuario</h2>
-          <div class="comparison-card glass-card">
-            <table class="comparison-table">
-              <thead>
-                <tr>
-                  <th>Acción</th>
-                  <th>¿Se conserva info?</th>
-                  <th>¿Puede iniciar sesión?</th>
-                  <th>¿Recuperación fácil?</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><strong>Deshabilitar</strong></td>
-                  <td><span class="badge badge-success">✅ Sí</span></td>
-                  <td><span class="badge badge-danger">❌ No</span></td>
-                  <td><span class="badge badge-success">✅ Sí</span></td>
-                </tr>
-                <tr>
-                  <td><strong>Eliminar</strong></td>
-                  <td><span class="badge badge-danger">❌ No</span></td>
-                  <td><span class="badge badge-danger">❌ No</span></td>
-                  <td><span class="badge badge-danger">❌ No</span></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <!-- Scenarios (Práctica 13) -->
-        <div class="scenarios-section">
-          <h2 class="section-title" style="font-size: 1.6rem;">Escenarios Empresariales</h2>
-          <div class="grid-2">
-            <div *ngFor="let s of scenarios" class="scenario-card glass-card">
-              <div class="scenario-header">
-                <span class="scenario-avatar">{{ s.icon }}</span>
-                <div>
-                  <strong>{{ s.name }}</strong>
-                  <p>{{ s.situation }}</p>
-                </div>
-              </div>
-              <div class="scenario-decision">
-                <span class="badge" [ngClass]="s.action === 'Deshabilitar' ? 'badge-warning' : 'badge-danger'">
-                  {{ s.action }}
-                </span>
-                <p class="scenario-reason">{{ s.reason }}</p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   `,
@@ -138,7 +85,7 @@ import { SupabaseService, UserProfile } from '../../services/supabase.service';
     .admin-hero {
       padding: 120px 0 40px;
       text-align: center;
-      background: radial-gradient(ellipse at 50% 0%, rgba(27,94,32,0.15), transparent 60%);
+      background: radial-gradient(ellipse at 50% 0%, rgba(0,61,122,0.15), transparent 60%);
     }
     .users-table-card { padding: 28px; margin-bottom: 40px; }
     .table-header {
@@ -149,7 +96,7 @@ import { SupabaseService, UserProfile } from '../../services/supabase.service';
       flex-wrap: wrap;
       gap: 12px;
     }
-    .table-header h3 { color: #F1F5F9; font-size: 1.1rem; }
+    .table-header h3 { color: #0F172A; font-size: 1.1rem; }
     .table-filters {
       display: flex;
       gap: 8px;
@@ -166,9 +113,9 @@ import { SupabaseService, UserProfile } from '../../services/supabase.service';
       transition: all 0.2s;
     }
     .table-filters button.active, .table-filters button:hover {
-      background: rgba(76,175,80,0.12);
-      border-color: #4CAF50;
-      color: #4CAF50;
+      background: rgba(0,114,198,0.12);
+      border-color: #0072c6;
+      color: #0072c6;
     }
     .table-responsive { overflow-x: auto; }
     table {
@@ -190,8 +137,8 @@ import { SupabaseService, UserProfile } from '../../services/supabase.service';
       border-bottom: 1px solid var(--border);
     }
     td {
-      color: #94A3B8;
-      border-bottom: 1px solid rgba(255,255,255,0.03);
+      color: #334155;
+      border-bottom: 1px solid rgba(0,0,0,0.03);
     }
     tr:hover td { background: rgba(255,255,255,0.02); }
     .user-cell {
@@ -202,39 +149,13 @@ import { SupabaseService, UserProfile } from '../../services/supabase.service';
     .user-avatar-sm {
       width: 32px; height: 32px;
       border-radius: 8px;
-      background: linear-gradient(135deg, #1B5E20, #4CAF50);
+      background: linear-gradient(135deg, #1B5E20, #0072c6);
       display: flex; align-items: center; justify-content: center;
       font-weight: 700;
       font-size: 0.8rem;
       color: white;
     }
     .action-btns { display: flex; gap: 6px; }
-
-    .comparison-section, .scenarios-section { margin-bottom: 40px; }
-    .comparison-card { padding: 24px; overflow-x: auto; }
-    .comparison-table { width: 100%; }
-    .comparison-table th {
-      background: rgba(76,175,80,0.05);
-    }
-
-    .scenario-card { padding: 24px; }
-    .scenario-header {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      margin-bottom: 16px;
-    }
-    .scenario-avatar { font-size: 2rem; }
-    .scenario-header strong { color: #F1F5F9; display: block; }
-    .scenario-header p { color: #64748B; font-size: 0.85rem; margin: 2px 0 0; }
-    .scenario-decision {
-      display: flex;
-      align-items: start;
-      gap: 12px;
-      padding-top: 12px;
-      border-top: 1px solid rgba(255,255,255,0.05);
-    }
-    .scenario-reason { color: #94A3B8; font-size: 0.83rem; line-height: 1.5; }
 
     @media (max-width: 768px) {
       .table-header { flex-direction: column; align-items: start; }
@@ -244,13 +165,6 @@ import { SupabaseService, UserProfile } from '../../services/supabase.service';
 export class AdminUsuariosComponent implements OnInit {
   users: UserProfile[] = [];
   filter: 'all' | 'enabled' | 'disabled' = 'all';
-
-  scenarios = [
-    { icon: '👩', name: 'Ana', situation: 'Vacaciones por 6 meses', action: 'Deshabilitar', reason: 'La cuenta debe conservarse ya que regresará. Deshabilitar previene accesos no autorizados durante su ausencia.' },
-    { icon: '👨', name: 'Luis', situation: 'Renunció definitivamente', action: 'Deshabilitar', reason: 'Aunque renunció, se debe deshabilitar (no eliminar) para conservar registros de auditoría y poder recuperar información si es necesario.' },
-    { icon: '👨‍💼', name: 'Pedro', situation: 'Suspendido durante investigación', action: 'Deshabilitar', reason: 'Debe deshabilitarse inmediatamente para evitar que modifique o elimine evidencia mientras dura la investigación.' },
-    { icon: '👩‍💼', name: 'María', situation: 'Cambio temporal de departamento', action: 'Deshabilitar', reason: 'Deshabilitar la cuenta actual y crear una nueva con los permisos del nuevo departamento. Al regresar, se reactiva la original.' }
-  ];
 
   constructor(private supabase: SupabaseService) {}
 
@@ -288,3 +202,4 @@ export class AdminUsuariosComponent implements OnInit {
     }
   }
 }
+

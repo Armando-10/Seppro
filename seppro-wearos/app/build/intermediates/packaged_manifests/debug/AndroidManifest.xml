@@ -26,16 +26,16 @@
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
         android:extractNativeLibs="false"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@android:drawable/sym_def_app_icon"
         android:label="SEPPRO"
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@android:style/Theme.DeviceDefault"
         android:usesCleartextTraffic="true" >
 
-        <!-- PIN Login Activity -->
+        <!-- Native Login Activity -->
         <activity
-            android:name="com.seppro.wearos.PinLoginActivity"
+            android:name="com.seppro.wearos.LoginActivity"
             android:exported="true"
             android:label="SEPPRO - Login" >
             <intent-filter>

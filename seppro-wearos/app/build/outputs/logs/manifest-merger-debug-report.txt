@@ -96,21 +96,21 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\arman\.gradle\cach
 	tools:targetApi
 		ADDED from D:\PROYECTOS\dedos\Proyecto SEPPRO\2025\seppro-wearos\app\src\main\AndroidManifest.xml:19:9-29
 	android:icon
-		ADDED from D:\PROYECTOS\dedos\Proyecto SEPPRO\2025\seppro-wearos\app\src\main\AndroidManifest.xml:14:9-43
+		ADDED from D:\PROYECTOS\dedos\Proyecto SEPPRO\2025\seppro-wearos\app\src\main\AndroidManifest.xml:14:9-58
 	android:allowBackup
 		ADDED from D:\PROYECTOS\dedos\Proyecto SEPPRO\2025\seppro-wearos\app\src\main\AndroidManifest.xml:13:9-35
 	android:theme
 		ADDED from D:\PROYECTOS\dedos\Proyecto SEPPRO\2025\seppro-wearos\app\src\main\AndroidManifest.xml:17:9-59
 	android:usesCleartextTraffic
 		ADDED from D:\PROYECTOS\dedos\Proyecto SEPPRO\2025\seppro-wearos\app\src\main\AndroidManifest.xml:18:9-44
-activity#com.seppro.wearos.PinLoginActivity
+activity#com.seppro.wearos.LoginActivity
 ADDED from D:\PROYECTOS\dedos\Proyecto SEPPRO\2025\seppro-wearos\app\src\main\AndroidManifest.xml:22:9-30:20
 	android:label
 		ADDED from D:\PROYECTOS\dedos\Proyecto SEPPRO\2025\seppro-wearos\app\src\main\AndroidManifest.xml:25:13-43
 	android:exported
 		ADDED from D:\PROYECTOS\dedos\Proyecto SEPPRO\2025\seppro-wearos\app\src\main\AndroidManifest.xml:24:13-36
 	android:name
-		ADDED from D:\PROYECTOS\dedos\Proyecto SEPPRO\2025\seppro-wearos\app\src\main\AndroidManifest.xml:23:13-45
+		ADDED from D:\PROYECTOS\dedos\Proyecto SEPPRO\2025\seppro-wearos\app\src\main\AndroidManifest.xml:23:13-42
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from D:\PROYECTOS\dedos\Proyecto SEPPRO\2025\seppro-wearos\app\src\main\AndroidManifest.xml:26:13-29:29
 action#android.intent.action.MAIN

@@ -99,7 +99,7 @@ import { FormsModule } from '@angular/forms';
     .contact-hero {
       padding: 140px 0 60px;
       text-align: center;
-      background: radial-gradient(ellipse at 50% 0%, rgba(27,94,32,0.15), transparent 60%);
+      background: radial-gradient(ellipse at 50% 0%, rgba(0,61,122,0.15), transparent 60%);
     }
     .contact-grid {
       display: grid;
@@ -108,7 +108,7 @@ import { FormsModule } from '@angular/forms';
       align-items: start;
     }
     .contact-form { padding: 36px; }
-    .contact-form h2 { color: #F1F5F9; font-size: 1.4rem; margin-bottom: 24px; }
+    .contact-form h2 { color: #0F172A; font-size: 1.4rem; margin-bottom: 24px; }
     .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
     textarea.form-input { resize: vertical; min-height: 120px; }
 
@@ -120,9 +120,9 @@ import { FormsModule } from '@angular/forms';
       padding: 20px;
     }
     .info-icon { font-size: 1.5rem; }
-    .info-card h4 { color: #F1F5F9; font-size: 0.9rem; margin-bottom: 2px; }
+    .info-card h4 { color: #0F172A; font-size: 0.9rem; margin-bottom: 2px; }
     .info-card p { color: #64748B; font-size: 0.85rem; margin: 0; }
-    .info-card a { color: #4CAF50; text-decoration: none; }
+    .info-card a { color: #0072c6; text-decoration: none; }
     .info-card a:hover { text-decoration: underline; }
 
     .map-container { padding: 8px; overflow: hidden; }
@@ -142,3 +142,4 @@ export class ContactoComponent {
     setTimeout(() => this.submitted = false, 3000);
   }
 }
+
